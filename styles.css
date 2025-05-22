@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #0ff;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.item {
+    width: calc(100%/100 - 2px);
+    height: 50%;
+    top: 50%;
+    background-color: #00f;
+    transform: translateY(200%);
+    animation: wave 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(200%);
+    }
+    
+    50% {
+        transform: translateY(100%);
+    }
+}
+
+.item-1,
+.item-21,
+.item-41,
+.item-61,
+.item-81 {
+    animation-delay: 0;
+}
+
+.item-2,
+.item-22,
+.item-42,
+.item-62,
+.item-82 {
+    animation-delay: 0.25s;
+}
+
+.item-3,
+.item-23,
+.item-43,
+.item-63,
+.item-83 {
+    animation-delay: 0.50s;
+}
+
+.item-4,
+.item-24,
+.item-44,
+.item-64,
+.item-84 {
+    animation-delay: 0.75s;
+}
+
+.item-5,
+.item-25,
+.item-45,
+.item-65,
+.item-85 {
+    animation-delay: 1s;
+}
+
+.item-6,
+.item-26,
+.item-46,
+.item-66,
+.item-86 {
+    animation-delay: 1.25s;
+}
+
+.item-7,
+.item-27,
+.item-47,
+.item-67,
+.item-87 {
+    animation-delay: 1.50s;
+}
+
+.item-8,
+.item-28,
+.item-48,
+.item-68,
+.item-88 {
+    animation-delay: 1.75s;
+}
+
+.item-9,
+.item-29,
+.item-49,
+.item-69,
+.item-89 {
+    animation-delay: 2s;
+}
+
+.item-10,
+.item-30,
+.item-50,
+.item-70,
+.item-90 {
+    animation-delay: 2.25s;
+}
+
+.item-11,
+.item-31,
+.item-51,
+.item-71,
+.item-91 {
+    animation-delay: 2.50s;
+}
+
+.item-12,
+.item-32,
+.item-52,
+.item-72,
+.item-92 {
+    animation-delay: 2.75s;
+}
+
+.item-13,
+.item-33,
+.item-53,
+.item-73,
+.item-93 {
+    animation-delay: 3s;
+}
+
+.item-14,
+.item-34,
+.item-54,
+.item-74,
+.item-94 {
+    animation-delay: 3.25s;
+}
+
+.item-15,
+.item-35,
+.item-55,
+.item-75,
+.item-95 {
+    animation-delay: 3.50s;
+}
+
+.item-16,
+.item-36,
+.item-56,
+.item-76,
+.item-96 {
+    animation-delay: 3.75s;
+}
+
+.item-17,
+.item-37,
+.item-57,
+.item-77,
+.item-97 {
+    animation-delay: 4s;
+}
+
+.item-18,
+.item-38,
+.item-58,
+.item-78,
+.item-98 {
+    animation-delay: 4.25s;
+}
+
+.item-19,
+.item-39,
+.item-59,
+.item-79,
+.item-99 {
+    animation-delay: 4.50s;
+}
+
+.item-20,
+.item-40,
+.item-60,
+.item-80,
+.item-100 {
+    animation-delay: 4.75s;
+}
