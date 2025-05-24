@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+
+:root {
+    --primary-color: #008800;
+    --secondary-color: #fff;
+    --thertiary-color: #00f;
+    --forth-color: #ff0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     max-width: 100%;
     height: 100vh;
@@ -13,13 +25,67 @@
     overflow: hidden;
 }
 
-.item {
+.wave-a {
     width: calc(100%/100 - 2px);
     height: 50%;
     top: 50%;
-    background-color: #00f;
+    background-color: var(--thertiary-color);
     transform: translateY(200%);
     animation: wave 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+.wave-b {
+    width: calc(100%/100 - 2px);
+    height: 100%;
+    background-color: var(--thertiary-color);
+    animation: wave-b 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+.wave-c {
+    width: calc(100%/100 - 2px);
+    height: 100%;
+    background-color: var(--thertiary-color);
+    animation: wave-c 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+.btn-flex {
+        display: flex;
+        gap: 1rem;
+        position: absolute;
+    }
+
+    .btn {
+        width: 220px;
+        margin: 10px auto;
+        padding: 10px 20px;
+        border: 1px solid var(--thertiary-color);      
+        color: var(--thertiary-color);
+        font-size: 1.5rem;
+        font-weight: 400;
+        border-radius: 20px;
+        text-align: center;
+        z-index: 1000;
+
+        &:hover {            
+            background-color: #ffbf00;
+            color: var(--primary-color);
+        }
+
+    }
+
+.btn-a,
+.btn-c{
+        position: fixed;
+        border: 1px solid var(--thertiary-color);
+        background-color: var(--forth-color);
+        color: var(--thertiary-color);
+}
+
+.btn-b {
+      background: linear-gradient(to right, #ff0,#0f0, #0ff);
+
+      &:hover {
+        background: linear-gradient(to right, #ffa,#afa, #aff);
+      }
 }
 
 @keyframes wave {
@@ -31,6 +97,43 @@
         transform: translateY(100%);
     }
 }
+
+@keyframes wave-b {
+    0%, 100% {
+        background-color: #f00;
+    }
+    
+    16.66% {
+        background-color: #ff0;
+    }
+    
+    33.33% {
+        background-color: #0f0;
+    }
+    
+    50% {
+        background-color: #0ff;
+    }
+    
+    66.66% {
+        background-color: #00f;
+    }
+    
+    83.33% {
+        background-color: #f0f;
+    }
+}
+
+@keyframes wave-c {
+    0%, 100% {
+        opacity: 0.4;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+}
+
 
 .item-1,
 .item-21,
